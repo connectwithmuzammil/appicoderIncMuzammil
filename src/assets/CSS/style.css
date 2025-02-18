@@ -1,0 +1,471 @@
+/***************************************** HEADER CSS **************************************/
+header {
+  padding: 16px 40px 16px 40px;
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+header .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+header ul li {
+  cursor: pointer;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  color: #fff;
+}
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+header ul li:last-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  padding: 9px;
+  height: 40px;
+}
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: space-between;
+}
+header .logo {
+  cursor: pointer;
+  object-fit: contain;
+}
+header .mobile-nav {
+  display: none;
+}
+header .hamburger-mobile {
+  display: none;
+}
+
+/***************************** SECTION LAYOUT CSS **************************************/
+.section-layout {
+}
+.section-layout .container {
+}
+.section-layout .container {
+}
+/***************************************** LANDING CSS **************************************/
+
+.landing-page {
+  margin-top: -70px;
+}
+
+.landing-page .banner-sec {
+  background-image: url(/public/images/hero-bg.webp);
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  background-size: cover;
+  background-position: center;
+  padding-inline: 40px;
+  padding-top: 100px;
+  position: relative;
+}
+.landing-page .banner-sec .bannerSecWrap {
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+}
+.landing-page .banner-sec .left {
+  flex: 1;
+  display: flex;
+}
+.landing-page .banner-sec .left img {
+  width: 80%;
+}
+.landing-page .banner-sec .right {
+  flex: 2;
+}
+.landing-page .banner-sec .right .content h1 {
+  color: #fff;
+  font-size: 38px;
+  line-height: 46px;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+.landing-page .banner-sec .right .content p {
+  color: #fff;
+  max-width: 450px;
+  margin-bottom: 16px;
+}
+.landing-page .btn-comp {
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, #4d0f0f, #851919, #b22222);
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  min-width: 240px;
+  font-weight: 700;
+}
+.landing-page .banner-sec .category-btn-prev-next {
+  position: absolute;
+  right: 200px;
+  bottom: 100px;
+}
+.landing-page .banner-sec .category-btn-prev-next .category-prev {
+  border-radius: 100px;
+  padding: 6px;
+  background-color: #ffffff;
+}
+.landing-page .banner-sec .category-btn-prev-next .category-next {
+  border-radius: 100px;
+  padding: 6px;
+  background-color: #ffffff;
+  margin-left: 6px;
+}
+
+.landing-page .sec-2 {
+}
+.landing-page .sec-2 .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px 30px 40px;
+}
+.landing-page .sec-2 .container .left {
+  flex: 1;
+}
+.landing-page .sec-2 .container .left h1 {
+  font-size: 35px;
+  line-height: 46px;
+  max-width: 480px;
+  margin-inline: auto;
+}
+.landing-page .sec-2 .container .left h1 span {
+  color: #e11923;
+}
+.landing-page .sec-2 .container .right {
+  flex: 1;
+}
+.landing-page .sec-2 .container .right p {
+  margin-bottom: 12px;
+}
+.landing-page .sec-3 {
+  background-image: url(/public/images/testimonial-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  position: relative;
+}
+.landing-page .sec-3 .box {
+  background: linear-gradient(rgba(176, 30, 40, 0.92), rgba(176, 30, 40, 0.92)),
+    url(/public/images/testimonial-bg.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1050px;
+  margin-inline: auto;
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+}
+.landing-page .sec-3 .box .left {
+  flex: 1;
+}
+.landing-page .sec-3 .box .left h1 {
+  font-size: 36px;
+  line-height: 43px;
+}
+.landing-page .sec-3 .box .left h6 {
+  font-size: 14px;
+  color: #cdcbd1;
+}
+.landing-page .sec-3 .box .right {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+}
+.landing-page .sec-3 .box .right .box-review {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  position: relative;
+  height: 320px;
+}
+.landing-page .sec-3 .box .right .box-review .top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.landing-page .sec-3 .box .right .box-review .top img {
+  width: 110px;
+  object-fit: contain;
+}
+.landing-page .sec-3 .box .right .box-review .top h6 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+}
+.landing-page .sec-3 .box .right .box-review .top h6::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #e11923;
+}
+.landing-page .sec-3 .box .right .box-review p {
+  color: #000000;
+}
+.landing-page .sec-3 .custom-nav {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+.landing-page .sec-3 .custom-nav .line-nav {
+  width: 30px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.landing-page .sec-3 .custom-nav .line-nav.active {
+  background-color: #e11923;
+}
+
+.landing-page .sec-4 {
+  padding: 40px;
+  background-color: #e9edf0;
+}
+.landing-page .sec-4 h1 {
+  text-align: center;
+  font-size: 35px;
+  line-height: 43px;
+  margin-bottom: 20px;
+}
+.landing-page .sec-4 .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.landing-page .sec-4 .container .box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 calc(33.33% - 20px);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.landing-page .sec-4 .container .box .left {
+}
+.landing-page .sec-4 .container .box .right {
+}
+.landing-page .sec-4 .container .box .right img {
+  object-fit: contain;
+}
+.landing-page .sec-4 .container .box .right h2 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #3c3c3c;
+  margin-bottom: 8px;
+}
+.landing-page .sec-4 .container .box .right p {
+  font-size: 14px;
+}
+
+.landing-page .sec-5 {
+  background-image: url(/public/images/products-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  position: relative;
+}
+.landing-page .sec-5 h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  line-height: 43px;
+  margin-bottom: 20px;
+}
+.landing-page .sec-5 .tab-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+.landing-page .sec-5 .tab-container p {
+  cursor: pointer;
+}
+.landing-page .sec-5 .tab-container p.active {
+  border-bottom: 1px solid #ffffff;
+}
+.landing-page .sec-5 .tab-data {
+}
+.landing-page .sec-5 .tab-data .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.landing-page .sec-5 .tab-data .container .box {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+}
+.landing-page .sec-5 .tab-data .container .box img {
+  /* width: 200px; */
+  object-fit: contain;
+  margin-inline: auto;
+}
+
+.landing-page .sec-6 {
+  padding: 40px;
+  background-color: #e9edf0;
+}
+.landing-page .sec-6 h1 {
+  font-size: 35px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.landing-page .sec-6 .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.landing-page .sec-6 .container .box {
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+.landing-page .sec-6 .container .box img {
+  object-fit: contain;
+  width: 220px;
+}
+
+.landing-page .sec-contact {
+  background-color: #e11923;
+  display: flex;
+  align-items: center;
+}
+.landing-page .sec-contact .container {
+  display: flex;
+}
+.landing-page .sec-contact .container .left {
+  flex: 1;
+  padding-inline-start: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+.landing-page .sec-contact .container .left .content h4 {
+  color: #ffffff;
+}
+.landing-page .sec-contact .container .left .content h1 {
+  color: #ffffff;
+  font-size: 35px;
+}
+.landing-page .sec-contact .container .left .content p {
+  color: #ffffff;
+}
+.landing-page .sec-contact .container .left form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  gap: 16px;
+}
+.landing-page .sec-contact .container .left form input {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+.landing-page .sec-contact .container .left form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  height: 120px;
+  resize: none;
+}
+.landing-page .sec-contact .container .right {
+  flex: 0.7;
+}
+.landing-page .sec-contact .container .right .top img {
+  width: 100%;
+}
+.landing-page .sec-contact .container .right .bottom {
+  background-image: url(/public/images/contact-img-1.webp);
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  margin-top: -8px;
+}
+.landing-page .sec-contact .container .right .bottom p {
+  color: #ffffff;
+  text-align: center;
+}
+.landing-page .sec-contact .container .right .bottom .contact-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-top: 16px;
+}
+.landing-page .sec-contact .container .right .bottom .contact-detail a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  background-color: #20222e;
+  padding: 40px 40px 20px 40px;
+}
+footer .container {
+}
+footer .container .top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+}
+footer .container .bottom {
+    padding-top: 20px;
+}
+footer .container .bottom p{
+    text-align: center;
+}
