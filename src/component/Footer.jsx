@@ -1,19 +1,19 @@
-import React from "react";
+import { MdDoubleArrow } from "react-icons/md";
 
 const Footer = () => {
   return (
     <footer>
       <div className="container">
         <div className="top">
-          <div className="wrap">
+          <div className="wrap one">
             <img src="/images/logo.webp" alt="logo" width={150} />
             <div className="contact-detail">
               <h2>Contact Us</h2>
-              <a href="tel:+18008268018">+1-(800) 826 8018</a>
+              <a href="tel:+18008268018">Tel: +1-(800) 826 8018</a>
               <a href="mailto:info@appicoders.com">info@appicoders.com</a>
             </div>
           </div>
-          <div className="wrap">
+          <div className="wrap two">
             <h2>About</h2>
             <div className="links">
               <p>Home</p>
@@ -21,12 +21,21 @@ const Footer = () => {
               <p>Contact Us</p>
             </div>
           </div>
-          <div className="wrap">
+          <div className="wrap three">
             <h2>Appicoders Services</h2>
             <div className="links">
-              <p>iPHONE APPLICATION DEVELOPMENT</p>
-              <p>ANDROID APPLICATION DEVELOPMENT</p>
-              <p>ENTERPRISE APPLICATION DEVELOPMENT</p>
+              <p>
+                <MdDoubleArrow color="#ffffff" size={20} />
+                iPHONE APPLICATION DEVELOPMENT
+              </p>
+              <p>
+                <MdDoubleArrow color="#ffffff" size={20} />
+                ANDROID APPLICATION DEVELOPMENT
+              </p>
+              <p>
+                <MdDoubleArrow color="#ffffff" size={20} />
+                ENTERPRISE APPLICATION DEVELOPMENT
+              </p>
             </div>
           </div>
         </div>

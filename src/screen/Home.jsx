@@ -174,8 +174,8 @@ const Home = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
     arrows: false,
   };
   var testimonialSliderSettings = {
@@ -270,19 +270,6 @@ const Home = () => {
               <h1>What our clients are Saying.</h1>
             </div>
             <div className="right">
-              {/* <div className="box-review">
-                <div className="top">
-                  <img src="/images/testimonial-img-1.webp" alt="testimonial" />
-                  <h6>Jesenia Liseth Tovar</h6>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Alias veritatis quisquam inventore, a deleniti perspiciatis
-                  eveniet obcaecati provident doloremque maxime quia illum nisi
-                  tempora? Laboriosam deserunt tenetur dolorum id. Dolorum!
-                  Eaque sint voluptates.
-                </p>
-              </div> */}
               <Slider ref={testimonialSliderRef} {...testimonialSliderSettings}>
                 {testimonials?.map((data, index) => (
                   <div className="box-review" key={index}>
@@ -342,9 +329,9 @@ const Home = () => {
           <div className="tab-data">
             <div className="container">
               {currentProducts.map((imgSrc, index) => (
-                <div className="box" key={index}>
-                  <img src={imgSrc} alt="product" width={300} height={200} />
-                </div>
+                // <div className="box" key={index}>
+                  <img src={imgSrc} alt="product"  />
+                // </div>
               ))}
             </div>
           </div>

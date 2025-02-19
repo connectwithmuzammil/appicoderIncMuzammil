@@ -74,17 +74,18 @@ header .hamburger-mobile {
 .landing-page .banner-sec {
   background-image: url(/public/images/hero-bg.webp);
   background-repeat: no-repeat;
-  /* height: 100vh; */
   background-size: cover;
   background-position: center;
   padding-inline: 40px;
   padding-top: 100px;
   position: relative;
+  overflow: hidden;
 }
 .landing-page .banner-sec .bannerSecWrap {
   display: flex !important;
   justify-content: start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .landing-page .banner-sec .left {
   flex: 1;
@@ -92,6 +93,8 @@ header .hamburger-mobile {
 }
 .landing-page .banner-sec .left img {
   width: 80%;
+  max-width: 100%;
+  height: auto;
 }
 .landing-page .banner-sec .right {
   flex: 2;
@@ -144,6 +147,7 @@ header .hamburger-mobile {
   align-items: center;
   justify-content: space-between;
   padding: 16px 40px 30px 40px;
+  flex-wrap: wrap;
 }
 .landing-page .sec-2 .container .left {
   flex: 1;
@@ -299,11 +303,11 @@ header .hamburger-mobile {
 .landing-page .sec-5 {
   background-image: url(/public/images/products-bg.webp);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   padding: 40px;
-  position: relative;
+  min-height: 100%;
 }
+
 .landing-page .sec-5 h1 {
   color: #ffffff;
   text-align: center;
@@ -315,6 +319,7 @@ header .hamburger-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 25px;
   color: #ffffff;
@@ -330,7 +335,7 @@ header .hamburger-mobile {
 .landing-page .sec-5 .tab-data .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  /* gap: 20px; */
 }
 .landing-page .sec-5 .tab-data .container .box {
   background-color: #ffffff;
@@ -338,10 +343,15 @@ header .hamburger-mobile {
   padding: 20px;
   display: flex;
 }
-.landing-page .sec-5 .tab-data .container .box img {
+.landing-page .sec-5 .tab-data .container img {
   /* width: 200px; */
   object-fit: contain;
   margin-inline: auto;
+  /* max-width: 400px; */
+  width: 90%;
+  height: 80%;
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 
 .landing-page .sec-6 {
@@ -372,8 +382,6 @@ header .hamburger-mobile {
 
 .landing-page .sec-contact {
   background-color: #e11923;
-  display: flex;
-  align-items: center;
 }
 .landing-page .sec-contact .container {
   display: flex;
@@ -453,19 +461,53 @@ header .hamburger-mobile {
 
 footer {
   background-color: #20222e;
-  padding: 40px 40px 20px 40px;
+  /* padding: 40px 40px 20px 40px; */
 }
 footer .container {
 }
 footer .container .top {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #464646;
+  padding-bottom: 30px;
+  padding: 40px;
+}
+footer .container .top .contact-detail {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .top h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+footer .container .top .contact-detail a {
+  color: #938e8e;
+  text-decoration: none;
+}
+footer .container .top .contact-detail h2 {
+  margin-bottom: 0px;
+}
+footer .container .top .wrap img {
+  margin-bottom: 30px;
+}
+footer .container .top .wrap .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .top p {
+  color: #938e8e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 footer .container .bottom {
-    padding-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-footer .container .bottom p{
-    text-align: center;
+footer .container .bottom p {
+  text-align: center;
+  color: #938e8e;
+}
+footer .border {
 }
